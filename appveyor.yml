@@ -2,6 +2,8 @@ image:
 - Visual Studio 2017
 configuration:
   - Release
+build_script:
+ - nuget restore "CustomerTestsExcel.sln" -verbosity quiet
 test_script:
   # upload the code coverage to codcov.io
   - ps: |
